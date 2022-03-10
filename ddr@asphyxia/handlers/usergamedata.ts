@@ -35,6 +35,8 @@ const userload = async (refId: string) => {
   let resObj = {
     result: K.ITEM("s32", 0),
     is_new: K.ITEM("bool", false),
+    is_refid_locked: K.ITEM("bool", false),
+    eventdata_count_all: K.ITEM("s16", 1),
     music: [],
     eventdata: []
   };

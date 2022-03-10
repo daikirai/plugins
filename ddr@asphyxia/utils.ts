@@ -1,7 +1,7 @@
 export function getVersion(info: EamuseInfo) {
   const dateCode = parseInt(info.model.split(":")[4]);
 
-  if (dateCode >= 2019022600 && dateCode <= 2020020300) return 10;
+  if (dateCode >= 2019022600 && dateCode <= 2023020300) return 10;
 
   return 0;
 }
