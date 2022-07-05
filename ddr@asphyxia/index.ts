@@ -21,6 +21,13 @@ export function register() {
   R.Route("system.convcardnumber", convcardnumber);
   R.Route("eventlog.write", eventLog);
 
+  R.Route("playerdata_2.usergamedata_advanced", usergamedata);
+  R.Route("playerdata_2.usergamedata_recv", usergamedata_recv);
+  R.Route("playerdata_2.usergamedata_send", usergamedata_send);
+
+  R.Route("system_2.convcardnumber", convcardnumber);
+  R.Route("eventlog_2.write", eventLog);
+
   R.WebUIEvent("updateName", async ({ refid, name }) => {
     let strdata: Profile | string[] = await DB.FindOne<Profile>(refid, { collection: "profile" });
 
